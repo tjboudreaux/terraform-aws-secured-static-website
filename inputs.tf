@@ -29,7 +29,7 @@ variable "acm_certificate_arn" {
 }
 
 variable "cloudfront_logging" {
-    type = "map"
+    type = "list"
     default = {
 
     }
