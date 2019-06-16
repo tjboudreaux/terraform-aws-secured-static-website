@@ -37,6 +37,8 @@ resource "aws_cloudfront_distribution" "website_distribution" {
         }
     }
 
+    logging_config = "${var.cloudfront_logging}"
+
     custom_error_response = "${var.custom_error_response_objects}"
 
     restrictions = {

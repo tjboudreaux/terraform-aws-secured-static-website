@@ -28,6 +28,14 @@ variable "acm_certificate_arn" {
     description = "The certificate you wish to secure the website with. Note: The ACM certificate must be in US-EAST-1 and be for all of the domain names you have specified in the domain_names variable."
 }
 
+variable "cloudfront_logging" {
+    type = "map"
+    default = {
+
+    }
+    description = "A logging configuration to be used in CloudFront for logging requests."
+}
+
 variable "distribution_price_class" {
     type = "string"
     default = "PriceClass_100"
