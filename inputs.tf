@@ -30,9 +30,6 @@ variable "acm_certificate_arn" {
 
 variable "cloudfront_logging" {
     type = "list"
-    default = {
-
-    }
     description = "A logging configuration to be used in CloudFront for logging requests."
 }
 
